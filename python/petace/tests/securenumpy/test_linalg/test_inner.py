@@ -1,0 +1,32 @@
+# Copyright 2023 TikTok Pte. Ltd.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import numpy as np
+import numpy.testing as npt
+
+import petace.securenumpy as snp
+from petace.tests.utils import SnpTestBase
+
+
+class TestInner(SnpTestBase):
+
+    def test_1d(self, party_id):
+        a = np.array([1, 2, 3], dtype=np.float64)
+        b = np.array([0, 1, 0], dtype=np.float64)
+        a_cipher = snp.array(a, 0)
+        b_cipher = snp.array(b, 1)
+        c_cipher = snp.inner(a_cipher, b_cipher)
+        c_plain = c_cipher.reveal_to(0)
+        if party_id == 0:
+            npt.assert_almost_equal(c_plain, np.inner(a, b), decimal=4)
