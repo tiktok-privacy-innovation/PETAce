@@ -13,7 +13,7 @@ Privacy-Enhancing Technologies via Applied Cryptography Engineering (PETAce) is 
 - The "primitive" layer consists of standard cryptographic algorithms and protocols, differential privacy mechanisms, and abstract network interfaces, etc.
 
 <figure>
-<img src='images/PETAce.png' align="middle"/>
+<img src='https://github.com/tiktok-privacy-innovation/PETAce/blob/2b59885bb557f6db0804c7c070a75b5c56b8fe3a/images/PETAce.png' align="middle"/>
 </figure>
 
 PETAce enables fast prototyping of ideas based on privacy-enhancing technologies, and we plan to integrate state-of-the-art research results into the PETAce in future releases. Its core modules are implemented in C++ and are modularized into the following repositories.
