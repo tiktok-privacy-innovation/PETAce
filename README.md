@@ -48,6 +48,8 @@ PETAce enables fast prototyping of ideas based on privacy-enhancing technologies
 
 ## Requirements
 
+<!-- start-petace-getting-started -->
+
 | System | Toolchain                                             |
 |--------|-------------------------------------------------------|
 | Linux  | Clang++ (>= 5.0) or GNU G++ (>= 5.5), CMake (>= 3.15) |
@@ -101,6 +103,8 @@ Output binaries can be found in `build/python/wheel/` directory.
 For more compilation options, such as enabling IPCL and network agents, please refer to [PETAce-Solo](https://github.com/tiktok-privacy-innovation/PETAce-Solo) and [PETAce-Network](https://github.com/tiktok-privacy-innovation/PETAce-Network).
 
 For instructions on how to run examples of PETAce, please refer to the instructions in the example directory.
+
+<!-- end-petace-getting-started -->
 
 ## Contribution
 
