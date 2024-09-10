@@ -1,5 +1,7 @@
 # PETAce
 
+<!-- start-petace-content -->
+
 Privacy-Enhancing Technologies via Applied Cryptography Engineering (PETAce) is a framework for privacy-preserving computing. It provides strong privacy guarantee by analytzing and computing cryptographically pseudonymized data without revealing hidden sensitive information. It consists of the following parts:
 
 - The "user interface" layer provides users with high-level programming interfaces for collaborative data analysis (SecureNumpy), joint SQL query (SecureSQL), and privacy-preserving machine learning (SecureML).
@@ -41,6 +43,8 @@ PETAce enables fast prototyping of ideas based on privacy-enhancing technologies
     - Socket network implementation
 
 - [Python API](python) provides Python APIs such as SecureNumpy, SecureML, SecureSQL, and SetOps.
+
+<!-- end-petace-content -->
 
 ## Requirements
 
