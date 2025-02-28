@@ -15,7 +15,7 @@
 FetchContent_Declare(
     duet
     GIT_REPOSITORY https://github.com/tiktok-privacy-innovation/PETAce-Duet.git
-    GIT_TAG        018c1b876e61c9b28a107b35f3ee0271cab43486 # 0.4.0
+    GIT_TAG        9e04635af5c72e61fd685ee94384ec29fce84879 # 0.4.1
 )
 FetchContent_GetProperties(duet)
 
